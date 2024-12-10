@@ -109,8 +109,10 @@
 // }
 
 // 11. Write a program to calculate the area of a circle, rectangle, and triangle using a switch statement
-
-// let input = Number(prompt("Enter number: "));
+// alert(`Prees 1 to find area of a circle, 
+//     Press 2 to find area of rectangle, 
+//     and press 3 to find area of triangle`);
+// let input = Number(prompt("Enter choice: "));
 // switch(input){
 //     case 1:
 //         let r = Number(prompt("Enter radius: "));
