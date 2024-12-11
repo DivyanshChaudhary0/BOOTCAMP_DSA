@@ -167,6 +167,7 @@ let n = 2;
 reverse(arr,0,n-1);
 reverse(arr,n,arr.length-1);
 reverse(arr,0,arr.length-1);
+
 console.log(arr);
 function reverse(arr,i,j) {
     let temp = null;
