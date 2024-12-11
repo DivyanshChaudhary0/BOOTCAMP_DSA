@@ -5,6 +5,33 @@
 //     console.log(n+ " * " +i + " = " + n*i);
 // }
 
+// 3. ISBN number
+// let n = 1566199093;
+// let copy = n;
+// let count=0;
+// let sum=0;
+
+// while(n>0){
+//     count++;
+//     n=Math.floor(n/10);
+// }
+// if(count===10 || count===13){
+//     for(let i=1;i<=count;i++){
+//         let ld = copy%10;
+//         sum += (i*ld);
+//         copy = Math.floor(copy/10);
+//     }
+//     if(sum%11===0){
+//         console.log(`valid ISBN number`);
+//     }
+//     else{
+//         console.log(`not a valid ISBN number`);
+//     }
+// }
+// else{
+//     console.log("Not an ISBN Number");
+// }
+
 // 4. HCF/GCD
 // let a = 25;
 // let b = 125;
@@ -75,6 +102,19 @@
 //     b=temp;
 //     console.log(temp);
 // }
+
+// 9. Find Number of integers which has exactly x divisors
+
+let n=20;
+let x = 3;
+
+for(let i=1;i<=n;i++){
+    for(let j=1;j<=n;j++){
+        
+    }
+}
+
+
 
 // 10. Program for Finding out the Prime Factors of a number
 
