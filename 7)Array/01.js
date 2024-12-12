@@ -161,21 +161,69 @@
 // k->l-1
 // 0->l-1
 
-let arr = [10, 20, 30, 40, 50];
-let n = 2;
+// let arr = [10, 20, 30, 40, 50];
+// let n = 2;
 
-reverse(arr,0,n-1);
-reverse(arr,n,arr.length-1);
-reverse(arr,0,arr.length-1);
+// reverse(arr,0,n-1);
+// reverse(arr,n,arr.length-1);
+// reverse(arr,0,arr.length-1);
 
-console.log(arr);
-function reverse(arr,i,j) {
-    let temp = null;
-    while(i<j){
-        temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-        i++;
-        j--;
-    }
-}
+// console.log(arr);
+// function reverse(arr,i,j) {
+//     let temp = null;
+//     while(i<j){
+//         temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//         i++;
+//         j--;
+//     }
+// }
+
+// ++++++++++++++++++++++++++++ 11) Right rotation by block swap algorithm ++++++++++++++++++++++
+
+// ++++++++++++++++++++++++++++ 12) take negative left side by two pointer ++++++++++++++++++++++
+// let arr = [10,12,-6,-7,56,-17,16,18,-1];
+
+// let i=0,j=0;
+// while(i<arr.length){
+//     if(arr[i]<0){
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//         j++;
+//     }
+//     i++;
+// }
+// console.log(arr);
+
+// ++++++++++++++++++++++++++++ 13) take zeros left side by two pointer ++++++++++++++++++++++
+// let arr = [0,1,0,1,0,1,0,0];
+// let i=0,j=0;
+
+// while(i<arr.length){
+//     if(arr[i] === 0){
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//         j++;
+//     }
+//     i++;
+// }
+// console.log(arr);
+
+// ++++++++++++++++++++++++++++ 14) find max number of group one ++++++++++++++++++++++
+// let arr = [1, 1, 0, 1, 1, 1, 0, 1];
+// let max = 0, count = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 1) {
+//     count++;
+//   } else {
+//     max = Math.max(max, count);
+//     count = 0;
+//   }
+// }
+// max = Math.max(max, count);
+
+// console.log(max);
