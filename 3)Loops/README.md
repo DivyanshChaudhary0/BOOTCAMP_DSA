@@ -31,8 +31,8 @@
 4) calculate sum of squres of first N natural numbers
 5) calculate sum of cubes of first N natural numbers
 6) calculate factorial of a number
-7) count digits of a given nuber
-8) check wheather number is a prime number 
+7) count digits of a given number
+8) check wheather number is a prime number
 9) calculate LCM of two numbers
 10) reverse a given number
 
