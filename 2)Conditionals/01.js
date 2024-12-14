@@ -1,5 +1,5 @@
 
-// Write a program to accept rating of the movies and movie name in string format.
+//1) Write a program to accept rating of the movies and movie name in string format.
 // show category of the movie based on the rating...
 
 let movieName = prompt("Enter Movie Name: ");
