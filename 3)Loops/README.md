@@ -1,3 +1,20 @@
+
+------------------------- 01.js -------------------------------------------
+
+1) print first 10 natural numbers
+2) print first 10 natural numbers in reverse order
+3) print first 10 odd natural numbers
+4) print first 10 odd natural numbers in reverse order
+5) print first 10 even natural numbers
+6) print first 10 even natural numbers in reverse order
+7) print square of first 10 natural numbers
+8) print cubes of first 10 natural numbers
+9) print table of 5
+10) 
+
+
+------------------------- 02.js -------------------------------------------
+
 1. Take a number as input and print the sum till the number
 2. Take a number as input and print the table
     5 * 1 = 5
