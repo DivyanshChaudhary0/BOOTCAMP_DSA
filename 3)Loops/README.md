@@ -10,10 +10,46 @@
 7) print square of first 10 natural numbers
 8) print cubes of first 10 natural numbers
 9) print table of 5
-10) 
-
 
 ------------------------- 02.js -------------------------------------------
+ 
+1) print first N natural numbers
+2) print first N natural numbers in reverse order
+3) print first N odd natural numbers
+4) print first N odd natural numbers in reverse order
+5) print first N even natural numbers
+6) print first N even natural numbers in reverse order
+7) print square of first N natural numbers
+8) print cubes of first N natural numbers
+9) print table of N
+
+------------------------- 03.js -------------------------------------------
+
+1) calculate sum of first N natural numbers
+2) calculate sum of first N even natural numbers
+3) calculate sum of first N odd natural numbers
+4) calculate sum of squres of first N natural numbers
+5) calculate sum of cubes of first N natural numbers
+6) calculate factorial of a number
+7) count digits of a given nuber
+8) check wheather number is a prime number 
+9) calculate LCM of two numbers
+10) reverse a given number
+
+------------------------- 04.js -------------------------------------------
+
+1) find the Nth term of fibonacci series
+2) print first N term of fibonacci series
+3) check that a given number is in the fibonacci series or not
+4) calculate HCF of two numbers
+5) check whether two numbers are co-prime or not
+6) print all prime numbers under 100
+7) print all prime numbers between two given numbers
+8) find next prime number of a given number
+9) check whether a given number is an armstrong number or not
+10) print all armstrong numbers under 100
+
+------------------------- 05.js -------------------------------------------
 
 1. Take a number as input and print the sum till the number
 2. Take a number as input and print the table
