@@ -22,16 +22,16 @@
 // console.log(`maximum number is ${max}`);
 
 // ++++++++++++++++++++++++++++ 3) Second max element +++++++++++++++++++++++++++
-// let arr = [20,40,50,55,8,12,68,43];
+// let arr = [10,10,10];
 // let max=arr[0]>arr[1]?arr[0]:arr[1];
 // let second_max=arr[0]<arr[1]?arr[0]:arr[1];
 
-// for(let i=1;i<arr.length;i++){
+// for(let i=2;i<arr.length;i++){
 //     if(arr[i]>max){
 //         second_max=max;
 //         max = arr[i];
 //     }
-//     else if(arr[i]>second_max){
+//     else if(arr[i]>second_max && arr[i]<max){
 //         second_max = arr[i];
 //     }
 // }
@@ -212,7 +212,7 @@
 // }
 // console.log(arr);
 
-// ++++++++++++++++++++++++++++ 14) find max number of group one ++++++++++++++++++++++
+// ++++++++++++++++++++++++++++ 14) find max count of pair one ++++++++++++++++++++++
 // let arr = [1, 1, 0, 1, 1, 1, 0, 1];
 // let max = 0, count = 0;
 
@@ -227,3 +227,109 @@
 // max = Math.max(max, count);
 
 // console.log(max);
+
+// ++++++++++++++++++++++++++++ 15) Linear Search Algorithm ++++++++++++++++++++++
+// let arr = [1,4,6,2,9,5,10];
+// let x = 6,idx=0;
+// let temp = -1;
+
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]===x){
+//         idx = i;
+//         temp=1;
+//         break;
+//     }
+// }
+// if(temp=-1) console.log(`${x} is present at index ${idx}`);
+// else console.log(`${x} is not present`);
+
+// ++++++++++++++++++++++++++++ 15) Binary Search Algorithm ++++++++++++++++++++++
+// array should be sorted ...?
+
+// let arr = [2,4,6,8,10,12,15];
+// let x = 6;
+// let i=0,j=arr.length-1,idx=0;
+
+// while(i<=j){
+//     let mid = parseInt((i+j)/2);
+//     if(x === arr[mid]){
+//         idx = i;
+//         break;
+//     }
+//     else if(arr[mid] > x){
+//         j = mid;
+//     }
+//     else if(arr[mid] < x){
+//         i = mid;
+//     }
+// }
+
+
+// --------------- GFG Second Largest function ----------------
+function secondLargest(arr) {
+  let max,sMax = -1;
+  if(arr[0]>arr[1]){
+    max = arr[0];
+    sMax = arr[1];
+  }
+  else if(arr[1]>arr[0]){
+    max = arr[1];
+    sMax = arr[0];
+  }
+  else{
+    return sMax;
+  }
+  for(let i=2;i<arr.length;i++){
+    if(arr[i]>max){
+        sMax = max;
+        max = arr[i];
+    }
+    else if(arr[i]>sMax && arr[i]<max){
+        sMax = arr[i];
+    }
+  }
+  return sMax;
+}
+
+console.log(secondLargest([10,5,10]));
+
+// --------------- Shift all negative in left side ----------------
+
+function shiftNegativeLeft(arr) {
+  let i=0;
+  let j=0;
+  while(j<arr.length){
+    if(arr[j]<0){
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+      i++;
+    }
+    j++;
+  }
+  return arr;
+}
+
+console.log(shiftNegativeLeft([-1, 2, -4, 5, 6, -7, 8]));
+console.log(shiftNegativeLeft([10,21,-5,-6,8]));
+console.log(shiftNegativeLeft([-6,2,-8,4,-3,-10]));
+
+
+let arr = [-1, 2, -4, 5, 6, -7, 8];
+let temp = [];
+let idx = 0;
+
+for(let i=0;i<arr.length;i++){
+  if(arr[i]<0){
+    temp[idx] = arr[i];
+    idx++;
+  }
+}
+for(let i=0;i<arr.length;i++){
+  if(arr[i]>0){
+    temp[idx]=arr[i];
+    idx++;
+  }
+}
+
+// console.log(temp);

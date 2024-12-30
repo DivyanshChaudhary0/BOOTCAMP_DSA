@@ -137,37 +137,34 @@
 // ------------- Sort array elements in desending order ---------------
 // -> first sort the array than reverse it
 
-let arr = [10, 1, 3, 30, 45, 40, 48, 50];
-let i = 0;
-let j = arr.length - 1;
+// let arr = [10, 1, 3, 30, 45, 40, 48, 50];
+// let i = 0;
+// let j = arr.length - 1;
 
-function sort(arr) {
-  for (let i = 0; i < arr.length - 1; i++) {
-    for (let j = 0; j < arr.length - 1 - i; j++) {
-      if (arr[j] > arr[j + 1]) {
-        let temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
-      }
-    }
-  }
-}
+// function sort(arr) {                // sort the array by bubble sort
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = 0; j < arr.length - 1 - i; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         let temp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = temp;
+//       }
+//     }
+//   }
+// }
+// sort(arr)
+// function reverse(arr, i, j) {
+//   while (i < j) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+//   }
+// }
+// reverse(arr, i, j);
 
-sort(arr)
-console.log(arr);
-
-function reverse(arr, i, j) {
-  while (i < j) {
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-    i++;
-    j--;
-  }
-}
-reverse(arr, i, j);
-
-console.log(arr);
+// console.log(arr);
 
 // ------------- copy array elements into another array ---------------
 // let arr1 = [10, 1, 3, 30, 45, 40, 48, 50];
@@ -178,3 +175,34 @@ console.log(arr);
 // }
 
 // console.log(arr2);
+
+// ------------- check that a number is plaindrome or not ------------
+// let num = 121;
+// let copy = num;
+// let rev = 0;
+
+// while(num>0){
+//   rev = rev*10 + num%10;
+//   num = Math.floor(num/10);
+// }
+// console.log(rev);
+// if(rev === copy) console.log("Plaindrome number");
+// else console.log("Not a palindrome number");
+
+// ------------- WAF to reverse a string ------------
+// let str = "bhola";
+// let rev = '';
+// for(let i=str.length-1;i>=0;i--){
+//   rev += str[i];
+// }
+// console.log(rev);
+
+// ------------- check that a string is plaindrome or not ------------
+// let str = "naman";
+// let rev = '';
+// for(let i=str.length-1;i>=0;i--){
+//   rev += str[i];
+// }
+// if(str===rev) console.log("palimdrome");
+// else console.log("Not palindrome");
+
