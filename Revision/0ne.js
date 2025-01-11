@@ -206,3 +206,148 @@
 // if(str===rev) console.log("palimdrome");
 // else console.log("Not palindrome");
 
+// Reverse Array
+// let arr = [10,20,30,40,50];
+// let i=0,j=arr.length-1;
+// while(i<j){
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+// }
+// console.log(arr);
+
+// Left rotation by one
+// let arr = [10,20,30,40,50];
+// let temp = arr[0];
+// for(let i=0;i<arr.length;i++){
+//     arr[i] = arr[i+1];
+// }
+// arr[arr.length-1] = temp;
+// console.log(arr);
+
+// Left rotation by K steps
+// let k=2;
+// let arr = [10,20,30,40,50];
+// k = k%arr.length;
+
+// for(let i=1;i<=k;i++){
+//     let temp = arr[0];
+//     for(let i=0;i<arr.length;i++){
+//         arr[i] = arr[i+1];
+//     }
+//     arr[arr.length-1] = temp;
+// }
+// console.log(arr);
+
+// palindrome string
+// let str = "madam";
+// let rev = "";
+// for (let i = str.length - 1; i >= 0; i--) {
+//     rev += str[i];
+// }
+// if (str === rev) {
+//     console.log("Palindrome");
+// } else {
+//     console.log("Not Palindrome");
+// }
+
+// count vowel,consonents & spaces
+// let str = "  9999";
+// let countVow=0,countConso=0,countSpaces=0;
+
+// for(let i=0;i<str.length;i++){
+//     let char = str[i].toLocaleLowerCase();
+//     if(char==='a' || char==='e' || char==='i' || char==='o' || char==='u'){
+//         countVow++;
+//     }
+//     else if(char===" "){
+//         countSpaces++;
+//     }
+//     else if(char>='1' && char<='9'){
+
+//     }
+//     else{
+//         countConso++;
+//     }
+// }
+// console.log(countVow,countConso,countSpaces);
+
+// Toggle Characters
+// let str = "AcgDfRt";
+// let newStr = "";
+// for(let i=0;i<str.length;i++){
+//     if(str[i]>='a' && str[i]<='z'){
+//         newStr += str[i].toUpperCase();
+//     }
+//     else{
+//         newStr += str[i].toLowerCase();
+//     }
+// }
+// console.log(newStr);
+
+// count the valid words
+// let words = ["pay", "attire", "practice", "attend"];
+// let pref = "at";
+
+// for(let i=0;i<words.length;i++){
+//     if(starts_with(words[i],pref))
+//         console.log(words[i]);
+// }
+
+// function starts_with(str,pref){
+//     if(pref.length>str.length) return false;
+//     for(let i=0;i<pref.length;i++){
+//         if(str[i]!==pref[i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+let sentence = "Hello bhai kaise ho";
+
+// with split method
+function capitalized(sentence){
+    let words = sentence.split(" ");
+    for(let i=0;i<words.length;i++){
+        let capitalizedWord = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+        console.log(capitalizedWord);
+    }
+}
+
+capitalized(sentence)
+
+// without using split method
+function capitalizedWords(sent){
+    let word = "";
+
+    for(let i=0;i<=sent.length;i++){
+        if(sent[i] === " " || sent[i] === undefined){
+            if(word.length>0){
+                let capitalized = word.charAt(0).toUpperCase() + word.slice(1);
+                console.log(capitalized);
+            }
+            word = "";
+        }
+        else{
+            word += sent[i];
+        }
+    }
+}
+capitalizedWords(sentence);
+
+// Accept a string and count the frequency of each character
+let str = "hello";
+let sortedStr = str.split("").sort().join("");
+for(let i=0;i<str.length;i++){
+    let count = 0;
+    for(let j=0;j<str.length;j++){
+        if(sortedStr[i]===sortedStr[j]) {
+            count++;
+        }
+    }
+    console.log(`${sortedStr[i]} = ${count}`)
+}
+console.log(sortedStr);
