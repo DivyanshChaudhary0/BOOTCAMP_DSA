@@ -288,3 +288,12 @@
 //     console.log(`array is not palindrome`);
 // }
 
+//find unique elements by set
+let arr = [1,1,2,3,4,5,6,5,4,3];
+let set = new Set();
+for(let i=0;i<arr.length;i++){
+    if(set.has(arr[i])){
+        
+    }
+    else set.add(arr[i]);
+}

@@ -351,3 +351,17 @@ for(let i=0;i<str.length;i++){
     console.log(`${sortedStr[i]} = ${count}`)
 }
 console.log(sortedStr);
+
+
+// let arr = [1,1,2,2,3,3];
+// let res = {};
+// for(let i=0;i<arr.length;i++){
+//     res[arr[i]] = 1;
+// }
+// let count = 0;
+// for(let key in res){
+//     count++;
+// }
+// console.log(count);
+
+let arr = [10,12,-6,-7,56,-17,16,18,-1];

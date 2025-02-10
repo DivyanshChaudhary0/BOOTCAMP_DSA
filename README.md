@@ -39,3 +39,28 @@ Date - 10/01/2025[
         3) Find an element in an array , return index
     ]
 ]
+
+Date - 11/01/2025[
+    leetcode - 832, 48 , 1893
+]
+
+Date - 13/01/2025[
+    find unique elements in array by set
+    find one unique element
+    leetcode - 1832, 771
+]
+
+Date - 14/01/2025[
+    leetcode - 645, 575
+]
+
+Date - 15/01/2025[
+    array frequency by map
+    find all unique elements in an array
+    find sum of all unique elements
+    leetcode - 2351 , 1 , 1748
+]
+
+Date - 16/01/2025[
+    leetcode - 2418, 290
+]

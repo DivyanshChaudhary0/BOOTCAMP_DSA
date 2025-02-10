@@ -312,10 +312,10 @@ function shiftNegativeLeft(arr) {
 
 console.log(shiftNegativeLeft([-1, 2, -4, 5, 6, -7, 8]));
 console.log(shiftNegativeLeft([10,21,-5,-6,8]));
-console.log(shiftNegativeLeft([-6,2,-8,4,-3,-10]));
+console.log(shiftNegativeLeft([-6,-2,8,4,-3,-10]));
 
 
-let arr = [-1, 2, -4, 5, 6, -7, 8];
+let arr = [-1, -2, 4, 5, -6, 7, -8];
 let temp = [];
 let idx = 0;
 
@@ -332,4 +332,16 @@ for(let i=0;i<arr.length;i++){
   }
 }
 
-// console.log(temp);
+console.log(temp);
+
+let i=0;j=1;
+while(j<arr.length){
+  if(arr[i]<0) i++;
+  else if(arr[j]<0){
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  j++;
+}
+console.log(arr);

@@ -127,9 +127,11 @@ function all_Unique_Elements(arr){
             }
         }
         if(temp === -1){
-            unique_Elements.push(i)
+            unique_Elements.push(arr[i])
         }
     }
+    return unique_Elements;
 }
-all_Unique_Elements([1,2,2,3,4,5,5,6])
 
+console.log(all_Unique_Elements([1,2,3,2,4,5,5,6]))
+// ye remove duplicates ban gya hai 

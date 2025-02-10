@@ -105,14 +105,14 @@
 
 // 9. Find Number of integers which has exactly x divisors
 
-let n=20;
-let x = 3;
+// let n=20;
+// let x = 3;
 
-for(let i=1;i<=n;i++){
-    for(let j=1;j<=n;j++){
+// for(let i=1;i<=n;i++){
+//     for(let j=1;j<=n;j++){
         
-    }
-}
+//     }
+// }
 
 
 
@@ -207,3 +207,27 @@ for(let i=1;i<=n;i++){
 //     }
 // }
 // console.log(sum);
+
+
+let n = 12;
+let temp = true;
+for(let i=2;i<n;i++){
+    if(n%i==0){
+        temp = false;
+        break;
+    }
+}
+if(temp){
+    console.log(`${n} is prime number`);   
+}
+else{
+    console.log(`${n} is not prime number`);   
+}
+
+function check_prime(n,i){
+    if(i>=n) return true;
+    if(n%i==0) return false;
+    return check_prime(n,i+1);
+}
+
+console.log(check_prime(7,2))
