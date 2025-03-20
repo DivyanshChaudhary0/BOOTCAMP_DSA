@@ -46,7 +46,60 @@ function bubble_Sort(arr){
     return arr;
 }
 
-console.log(bubble_Sort(arr))
+// console.log(bubble_Sort(arr))
 
-// Merge Sort
+// Merge Sort (devide and conqueror)
 
+let l = [1,3,5,7]
+let r = [2,4,6,8]
+
+function merge(l,r){
+    let i = 0;
+    let j = 0;
+    let k = 0;
+    let arr = new Array(l.length + r.length);
+    while(i< l.length && j< r.length){
+        if(l[i] < r[j]){
+            arr[k] = l[i];
+            k++;
+            i++;
+        }
+        else{
+            arr[k] = r[j];
+            k++;
+            j++;
+        }
+    }
+    while(i< l.length){
+        arr[k] = l[i];
+        k++;
+        i++;
+    }
+    while(j< r.length){
+        arr[k] = r[j];
+        k++;
+        j++;
+    }
+
+    return arr;
+}
+
+console.log(merge(l,r))
+
+// Cyclic Sort
+
+function cyclic_Sort(arr){
+    let i=0;
+    while(i<arr.length){
+        let index = arr[i]-1;
+        if(arr[i]!==arr[index]){
+            let temp = arr[i];
+            arr[i] = arr[index];
+            arr[index] = temp;
+        }
+        else i++;
+    }
+    return arr;
+}
+
+// console.log(cyclic_Sort([5,2,1,4,3,6]));
